@@ -13,6 +13,9 @@ p{
 nav, button, a{
   font-family: 'Open Sans', sans-serif;
 }
+.headroom{
+  padding-top: 2rem;
+}
 .crisp{
 color: #ffff00;
 }
