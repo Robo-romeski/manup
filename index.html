@@ -5,6 +5,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script type="text/javascript" src="instafeed.js"></script>
 <script type="text/javascript" src="assets/slick/slick.js"></script>
+<script type="text/javascript" src="nav.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
@@ -14,256 +15,35 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script type="text/javascript" src="main.js"></script>
+<!--<script type="text/javascript" src="main.js"></script>-->
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<!-- Code's messsy, basic layout for a small project I'm doing. Follow me on twitter @taylorgrendel for free pie!-->
-
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">USA Tees!</a>
-  </div>
-  
-  <div class="collapse navbar-collapse js-navbar-collapse">
-    <ul class="nav navbar-nav">
-      <li class="dropdown mega-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>        
-        <ul class="dropdown-menu mega-dropdown-menu">
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">Men Collection</li>                            
-                            <div id="menCollection" class="carousel slide" data-ride="carousel">
-                              <div class="carousel-inner">
-                                <div class="item active">
-                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
-                                    <h4><small>Summer dress floral prints</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">$49.99</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
-                                </div><!-- End Item -->
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
-                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">$9.99</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
-                                </div><!-- End Item -->
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
-                                    <h4><small>Denin jacket stamped</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">$49.99</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
-                                </div><!-- End Item -->                                
-                              </div><!-- End Carousel Inner -->
-                              <!-- Controls -->
-                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div><!-- /.carousel -->
-                            <li class="divider"></li>
-                            <li><a href="#">View Full Catalog <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-            </ul>
-          </li>
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">T-Shirts</li>
-              <li><a href="#">Short Sleeve</a></li>
-                            <li><a href="#">Long Sleeve</a></li>
-                            <li><a href="#">Tank Top/Sleeveless</a></li>
-              <li><a href="#">Made in U.S.A.</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Hats</li>
-                            <li><a href="#">Baseball Hats</a></li>
-              <li><a href="#">Premium</a></li>
-              <li><a href="#">Winter Hats</li>
-              <li><a href="#">Visors</li>
-            </ul>
-          </li>
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">Athletics</li>
-              <li><a href="#">Teamwear & Jerseys</a></li>
-              <li><a href="#">Performance Shirts</a></li>
-              <li><a href="#">Performance Sweats</a></li>                            
-              <li><a href="#">Performance Polos</a></li> 
-                            <li class="divider"></li>
-              <li class="dropdown-header">Button Down</li>
-                            <li><a href="#">Casual Shirts</a></li>
-              <li><a href="#">Short-Sleeve Shirts</a></li>    
-              <li><a href="#">Stain Resistant</li>         
-            </ul>
-          </li>
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">By Sport</li>
-                            <li><a href="#">Football</a></li>
-              <li><a href="#">Baseball</a></li>
-              <li><a href="#">Soccer</a></li>
-              <li><a href="#">Basketball</a></li>   
-              <li><a href="#">Volleyball</li>     
-                            <li class="divider"></li>
-              <li class="dropdown-header">Bags</li>
-                            <li><a href="#">Tote Bags</a></li>
-              <li><a href="#">Chinch Bags</a></li>                 
-            </ul>
-          </li>
-        </ul>       
-      </li>
-            <li class="dropdown mega-dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>        
-        <ul class="dropdown-menu mega-dropdown-menu">
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">T-Shirts</li>
-              <li><a href="#">Short Sleeve</a></li>
-                            <li><a href="#">Long Sleeve</a></li>
-                            <li><a href="#">Tank Top/Sleeveless</a></li>
-              <li><a href="#">Made in U.S.A.</a></li>
-              <li class="divider"></li>
-              <li class="dropdown-header">Hats</li>
-                            <li><a href="#">Baseball Hats</a></li>
-              <li><a href="#">Premium</a></li>
-              <li><a href="#">Winter Hats</li>
-              <li><a href="#">Visors</li>
-            </ul>
-          </li>
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">Athletics</li>
-              <li><a href="#">Teamwear & Jerseys</a></li>
-              <li><a href="#">Performance Shirts</a></li>
-              <li><a href="#">Performance Sweats</a></li>                            
-              <li><a href="#">Performance Polos</a></li> 
-                            <li class="divider"></li>
-              <li class="dropdown-header">Button Down</li>
-                            <li><a href="#">Casual Shirts</a></li>
-              <li><a href="#">Short-Sleeve Shirts</a></li>    
-              <li><a href="#">Stain Resistant</li>         
-            </ul>
-          </li>
-          <li class="col-sm-3">
-            <ul>
-              <li class="dropdown-header">By Sport</li>
-                            <li><a href="#">Football</a></li>
-              <li><a href="#">Baseball</a></li>
-              <li><a href="#">Soccer</a></li>
-              <li><a href="#">Basketball</a></li>   
-              <li><a href="#">Volleyball</li>     
-                            <li class="divider"></li>
-              <li class="dropdown-header">Bags</li>
-                            <li><a href="#">Tote Bags</a></li>
-              <li><a href="#">Chinch Bags</a></li>                 
-            </ul>
-          </li>
-                    <li class="col-sm-3">
-              <ul>
-              <li class="dropdown-header">Women Collection</li>                            
-                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
-                              <div class="carousel-inner">
-                                <div class="item active">
-                                    <a href="#"><img src="http://placehold.it/254x150/3498db/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 1"></a>
-                                    <h4><small>Summer dress floral prints</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">$49.99</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
-                                </div><!-- End Item -->
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/ff3546/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 2"></a>
-                                    <h4><small>Gold sandals with shiny touch</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">$9.99</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
-                                </div><!-- End Item -->
-                                <div class="item">
-                                    <a href="#"><img src="http://placehold.it/254x150/2ecc71/f5f5f5/&text=New+Collection" class="img-responsive" alt="product 3"></a>
-                                    <h4><small>Denin jacket stamped</small></h4>                                        
-                                    <button class="btn btn-primary" type="button">$49.99</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
-                                </div><!-- End Item -->                                
-                              </div><!-- End Carousel Inner -->
-                              <!-- Controls -->
-                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                              </a>
-                            </div><!-- /.carousel -->
-                            <li class="divider"></li>
-                            <li><a href="#">View Full Catalog <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
-            </ul>
-          </li>
-        </ul>       
-      </li>
-            <li><a href="#">Get A Quote</a></li>
-            <li><a href="product/example/index.php">Design Your Own!</a></li>
-            <li><a href="#">Catalog</a></li>
-            <li><a href="#">Shop</a></li>
-    </ul>
-        <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a data-toggle="modal" data-target="#myModal" href="#">Login </a>
-          <!-- <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul> -->
-        </li>
-        <li><a href="#">My cart (0) items</a></li>
-      </ul>
-  </div><!-- /.nav-collapse -->
-  </nav>
+<!-- NAV SPACE -->
+<nav id="header" class="navbar navbar-fixed-top">
+            <div id="header-container" class="container navbar-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="brand" class="navbar-brand" href="#">MAN UP!</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
 
 
-<div class="container" style="padding-top:8rem;">
-<div class="row">
-        <!-- Jumbotron Header -->
-        <header class="jumbotron hero-spacer">
-            <h1>Welcome to USATees!</h1>
-            <h3>Home to Brooklyn's very own #1 screen Print/Embroidery shop. Every week, thousands of churches, families, schools, sport teams, and independents use USATees for their custom printed apparel.</h3><br>
-           
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg">
-  Get Started
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-<div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">x</button>
-            <h3 class="modal-title">Login to USATees.com</h3>
-          </div>
-          <div class="modal-body">
-            <form method="post" action='' name="login_form">
-            <div class="form-group">
-              <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
-              <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
-              <p><button type="submit" class="btn btn-primary">Sign in</button>
-                <a href="#"><button type="submit" class="btn btn-primary">Forgot Password?</button></a>
-              </p>
-            </form>
-          </div>
-          <div class="modal-footer">
-           <p> New To USATees.com?</p>
-            <a href="#" class="btn btn-primary">Register</a>
-          </div>
-    </div>
-  </div>
-</div>
-            </p>
-        </header>
-
-        <hr></div></div>
-<!--
-            <div id="startchange"></div>
+<!-- SlideShow -->
+<div id="startchange"></div>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   
   <ol class="carousel-indicators">
@@ -272,7 +52,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides 
+ 
   <div class="carousel-inner">
     <div class="item active">
       <img src="http://placehold.it/1200x550" alt="..." width="100%">
@@ -294,7 +74,7 @@
     </div>
   </div>
 
-  <!-- Controls 
+
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
@@ -302,6 +82,51 @@
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
+
+<div class="container" style="padding-top:8rem;">
+<div class="row">
+        <!-- Jumbotron Header -->
+        <header class="jumbotron hero-spacer">
+            <h1>Why We Do It...</h1>
+            <h4>
+After the unfortunate death of the 8 year old angel, Deasean Hill in East New York, Brooklyn in November 2003, and soon thereafter, the release of the shocking Black male unemployment report in Febuary 2004, an emergency meeting of like-minded men was corralled to discuss and create immediate solutions that would combat both these community problems. ( Senseless violence & racial discrimination). The concept of these group meetings was soon reffered to as ''Man Up !'' sessions. This drive gave birth to the incorporation of MAN UP! INC. in 2005. A ''real'' street & community based not-for-profit 501 (c)3 organization. We service communities through after school, summer day camps, employment readiness, mentoring, sports, recreational and advocacy programs. By 2010 MAN UP! INC. operates out of three locations in Brooklyn, New York and has serviced tens of thousands of New Yorkers, both young and old, all in the loving memory of Daesean Hill and countless others.....</h4><br>
+           
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg">
+  Sign up for our Newsletter
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+<div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <h3 class="modal-title">Login to ManUp</h3>
+          </div>
+          <div class="modal-body">
+            <form method="post" action='' name="login_form">
+            <div class="form-group">
+              <p><input type="text" class="span3" name="eid" id="email" placeholder="Email"></p>
+              <p><input type="password" class="span3" name="passwd" placeholder="Password"></p>
+              <p><button type="submit" class="btn btn-primary">Sign in</button>
+                <a href="#"><button type="submit" class="btn btn-primary">Forgot Password?</button></a>
+              </p>
+            </form>
+          </div>
+          <div class="modal-footer">
+           <p> New To ManUp.Org?</p>
+            <a href="#" class="btn btn-primary">Register</a>
+          </div>
+    </div>
+  </div>
+</div>
+            </p>
+        </header>
+
+        <hr></div></div>
+<!--
+            
             <div class="content-block-one" id="instafeed">
              <div class="instagram" id="instagram"></div>
             </div>----><div class="row">
@@ -313,24 +138,24 @@
     <h2 class="text-center">Our Services</h2> <hr />
     <div class="row text-center">
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-folder-open"> </i><br><br>
-        <h4>Custom Fit & Designs</h4>
-        <p>Have some of our fantastic designers bring your project to life, or use your own art.</p>
+        <i class="glyphicon glyphicon-education"> </i><br><br>
+        <h4>Job Training & Career Services</h4>
+        <p>With our Ready 4 Work program, and our Job Development Center, we offering a variety of different resources and skills that are relevant in present day job markets.</p>
       </div>
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-calendar"> </i><br><br>
-        <h4>Schedule Efficiency</h4>
-        <p>We pride ourselves on our prompt service. Get your order on time and as expected. Free Shipping.</p>
+        <i class="glyphicon fa fa-child"> </i><br><br>
+        <h4>Children's Programs</h4>
+        <p>Positive role models are key to positive early child development. We offer after-school and summer camp outlets for our youth.</p>
       </div>
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-phone-alt"> </i><br><br>
-        <h4>Rapid Customer Service</h4>
-        <p>Receive correspondence is answered at it fastest - no matter the season.</p>
+        <i class="glyphicon fa fa-hand-peace-o"> </i><br><br>
+        <h4>Programs for Peace</h4>
+        <p>Cure Violence, Don't Shoot NYC are just two of our major campaigns to end gun and gang violence.</p>
       </div>
       <div class="col-sm-3 col-xs-6">
-        <i class="glyphicon glyphicon-credit-card"> </i><br><br>
-        <h4>Flexible Payments</h4>
-        <p>All major forms of payment accepted - Online or In Person!</p>
+        <i class="glyphicon fa fa-circle-o-notch fa-spin"> </i><br><br>
+        <h4>Neighborhood Patrol</h4>
+        <p>Armed with our bold souls in the Neighborhood Voulenteer Corps, we have enlisted the voices of east new york; Helping to keep our streets safe.</p>
       </div>
     </div>
   </div>
@@ -340,8 +165,8 @@
             </div>
 
             <div class="content-block-one">
-            <h1>Online Select Collections</h1>
-                <p>Check out some of our ready-made designs from our clothing boutique. Re-Tweet Coupons are re-deemable here!</p>
+            <h1>Social Corner</h1>
+                <p>Connect with us! here is some of our activity on the web' join in! tell us how we are doing!</p>
             </div>
 
 
@@ -351,138 +176,26 @@
             <br>
             <div class="row">
            <div class="col-lg-3">
-             <a class="twitter-timeline" href="https://twitter.com/USATEES" data-widget-id="694754769668276225">Tweets by @USATEES</a>
+             <a class="twitter-timeline" href="https://twitter.com/MANUPINC" data-widget-id="442421826568732672">Tweets by @MANUPINC</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
            </div>
-<div class="col-lg-8">
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$24.99</h4>
-                                <h4><a href="#">First Product</a>
-                                </h4>
-                                 <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$64.99</h4>
-                                <h4><a href="#">Second Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">12 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$74.99</h4>
-                                <h4><a href="#">Third Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">31 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$84.99</h4>
-                                <h4><a href="#">Fourth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">6 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <div class="thumbnail">
-                            <img src="http://placehold.it/320x150" alt="">
-                            <div class="caption">
-                                <h4 class="pull-right">$94.99</h4>
-                                <h4><a href="#">Fifth Product</a>
-                                </h4>
-                                <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </div>
-                            <div class="ratings">
-                                <p class="pull-right">18 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        <h4><a href="#">Don't see anything you like? There's More!</a>
-                        </h4>
-                        <p>To browse through more designs, you can <a target="_blank" href="">visit our store</a> with even more selections! If you have your own design, goto our creation station!</p>
-                        <a class="btn btn-primary" target="_blank" href="product/example/index.php">Creation Station</a>
-                    </div>
-
+              
+                <div class="col-lg-8">
+                <div data-freeform-responsive="true"><iframe webkitallowfullscreen="true" autoplay="false" mozallowfullscreen="true" allowfullscreen="true" share="BET" src="http://www.bet.com/content/betcom/video/newsbriefs/brief/a-t-mitchell-hero-in-the-hood.share.responsive-true.html" width="100%" height="350" frameborder="0"></iframe><script type="text/javascript" src="http://www.bet.com/etc/designs/betcom/js/share.js"></script></div>
                 </div>
-                </div>
+
+                </div></div>
 
 
 
 
             <div class="content-space-two">
-                <div class="text-center crisp">
-            <h1>Better Quality, Better Prices</h1>
+                <div class="text-center crisp transparent">
+            <h1>
+Building A Better Community</h1>
                     <div class="page-break"></div>
-                <h3>Guaranteed!</h3>
+                <h3>One Block At A Time!</h3>
                 </div>
             </div>
             
@@ -506,7 +219,7 @@
 <footer class="footer-distributed">
 
       <div class="footer-left">
-<img src="img/usatees2.jpg">
+<img src="">
         <!--<h3>Company<span>logo</span></h3>-->
 
         <p class="footer-links">
@@ -514,33 +227,33 @@
           
           <a href="#">Blog</a>
           
-          <a href="#">Pricing</a>
+          <a href="#">Donations</a>
           
           <a href="#">About</a>
           
-          <a href="#">Faq</a>
+          <a href="#">Volunteering</a>
           
           <a href="#">Contact</a>
         </p>
 
-        <p class="footer-company-name">USATees &copy; 2015</p>
+        <p class="footer-company-name">ManUpInc. &copy; 2015</p>
       </div>
 
       <div class="footer-center">
 
         <div>
           <i class="fa fa-map-marker"></i>
-          <p>6509 11th Ave Brooklyn, N.Y. 11219</p>
+          <p>821 Van Siclen Ave, Brooklyn, New York 11207</p>
         </div>
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>1-800-USA-4449 | 1-718-232-2744 | <br>Fax 1-718-232-3793</p>
+          <p>JDC: (718)-498-2320 | <br>Main: (718)-483-9826 | <br>New Lots: (718)-484-2221</p>
         </div>
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@usatees.com">support@usatees.com</a></p>
+          <p><a href="mailto:info@manupinc.org">info@manupinc.org</a></p>
         </div>
 
       </div>
@@ -548,8 +261,9 @@
       <div class="footer-right">
 
         <p class="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+          <span>About Us</span>
+          MAN UP! Inc's mission is to serve urban neighborhoods as a Multi-Cultural, social services Agency for Neighborhood improvement and for the complete Understanding for emergency Preparedness.
+MAN UP! Inc's mission has further grown into providing youth & community job development programs and services to distressed communities.
         </p>
 
         <div class="footer-icons">

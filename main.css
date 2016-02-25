@@ -17,16 +17,60 @@ nav, button, a{
   padding-top: 2rem;
 }
 .crisp{
-color: #ffff00;
+color: black;
 }
-.navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-    margin-bottom: 0px;
-    position: fixed;
-    width: 100%;
-    border-radius: 0px;
-    z-index: 10007;
+.transparent {
+  background:#7f7f7f;
+  background:rgba(255,255,255,0.7);
+}
+
+/*
+* Style tweaks
+* --------------------------------------------------
+*/
+html,
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+    padding-top: 100px;
+}
+footer {
+    padding: 30px 0;
+}
+
+/*
+ * Custom styles
+ */
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
 }
 .content-block-one {
   padding: 30px;
@@ -82,7 +126,7 @@ color: #ffff00;
   padding: 0px;
   margin-bottom: 0px;
   color: inherit;
-  background: url(img/teesusa2.jpg) no-repeat center center fixed; 
+  background: url(img/manup.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -303,7 +347,7 @@ body {
   line-height: 30px;
 }
 
-.carousel-control {
+/*.carousel-control {
   width: 30px;
   height: 30px;
   top: -35px;
@@ -312,8 +356,8 @@ body {
 .left.carousel-control {
   right: 30px;
   left: inherit;
-}
-.carousel-control .glyphicon-chevron-left, 
+}*/
+/*.carousel-control .glyphicon-chevron-left, 
 .carousel-control .glyphicon-chevron-right {
   font-size: 12px;
   background-color: #292c2f;
@@ -321,7 +365,7 @@ body {
   text-shadow: none;
   color: #333;
   border: 1px solid #ddd;
-}
+}*/
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 #preview{
